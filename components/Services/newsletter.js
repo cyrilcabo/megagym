@@ -120,7 +120,7 @@ const ServicesNewsletter = () => {
 					</p> 
 				</Grid>
 				<Grid item container justify="center">
-					<Grid item xs={11} sm={5}>
+					<Grid item xs={11} sm={6} md={5}>
 						<form onSubmit={((e) => {e.preventDefault(); handleSubmit();})} style={{height: '100%'}}>	
 							<TextField 
 								fullWidth 
@@ -133,7 +133,7 @@ const ServicesNewsletter = () => {
 							<input type="submit" style={{display: 'none'}} />
 						</form>
 					</Grid>
-					<Grid item xs={11} sm={2}>
+					<Grid item xs={11} sm={3} md={2} container justify="flex-start">
 						<Button className={classes.btn} onClick={handleSubmit}> SUBSCRIBE </Button>
 					</Grid>
 				</Grid>
