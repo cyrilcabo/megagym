@@ -108,7 +108,7 @@ const Checkout = (props) => {
 		for (let val in order) {
 			const isDescription = val==="Description";
 			result.push(
-				<Grid item container className={classes.container} direction="column" xs={isDescription ?12 :6} md={isDescription ?4 :2}>
+				<Grid item key={val} container className={classes.container} direction="column" xs={isDescription ?12 :6} md={isDescription ?4 :2}>
 					<Grid item container justify="center" className={classes.detailTitleContainer}>
 						<h4 className={classes.serviceTitle}> {val} </h4>
 					</Grid>
