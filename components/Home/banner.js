@@ -94,6 +94,9 @@ const HomeBanner = () => {
 						<Button className={classes.CTA} onClick={() => Router.push('/services')}> Enroll now </Button>
 					</Grid>
 				</Grid>
+				<Grid item container xs={11} md={6} alignItems="center" justify="center">
+					<img className={classes.bannerImg} src={""} />
+				</Grid>
 			</Grid>
 		</Grid>
 	);

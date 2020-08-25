@@ -8,19 +8,20 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 const useStyle = makeStyles(theme => ({
 	root: {
 		minHeight: 466,
+		marginBottom: 20,
 		[theme.breakpoints.down('sm')]: {
 			padding: '20px 0px 50px 0px',
 		}
 	},
 	title: {
 		fontSize: '3rem',
-		margin: '60px 0px 80px 0px',
+		margin: '70px 0px 80px 0px',
 		[theme.breakpoints.down('sm')]: {
 			fontSize: '2.5rem',
+			textAlign: 'center',
 		},
 		[theme.breakpoints.down('xs')]: {
 			fontSize: '2rem',
-			textAlign: 'center',
 			margin: '30px 0px',
 		}
 	},

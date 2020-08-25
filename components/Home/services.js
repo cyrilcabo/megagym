@@ -11,9 +11,12 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyle = makeStyles(theme => ({
 	root: {
-		minHeight: 716,
+		minHeight: 690,
 		backgroundColor: '#212121',
 		position: 'relative',
+		[theme.breakpoints.down('md')]: {
+			minHeight: 670,
+		},
 		[theme.breakpoints.down('sm')]: {
 			paddingBottom: 40,
 		}
@@ -24,10 +27,11 @@ const useStyle = makeStyles(theme => ({
 		margin: '100px 0px',
 		[theme.breakpoints.down('sm')]: {
 			fontSize: '2.5rem',
+			margin: '80px 0px 80px 0px',
+			textAlign: 'center',
 		},
 		[theme.breakpoints.down('xs')]: {
 			fontSize: '2rem',
-			textAlign: 'center',
 			margin: '70px 0px',
 		}
 	},
@@ -35,6 +39,7 @@ const useStyle = makeStyles(theme => ({
 		justifyContent: 'space-between',
 		[theme.breakpoints.down('sm')]: {
 			justifyContent: 'center',
+			marginBottom: 50,
 		}
 	},
 	programContainer: {
@@ -43,18 +48,32 @@ const useStyle = makeStyles(theme => ({
 		border: '3px solid #dc2222',
 		boxShadow: '0px 0px 2px black',
 		padding: '20px 10px',
-		minHeight: 300,
+		minHeight: 250,
+		maxWidth: 300,
 		justifyContent: 'space-between',
 		textAlign: 'center',
 		'& > div.MuiGrid-item': {
 			margin: '15px 0px',
+			[theme.breakpoints.down('md')]: {
+				margin: '5px 0px',
+			},
+			[theme.breakpoints.down('xs')]: {
+				margin: '10px 0px',
+			}
+		},
+		[theme.breakpoints.only('md')]: {
+			flexBasis: '28%',
+			width: '28%'
 		},
 		[theme.breakpoints.down('sm')]: {
-			margin: '0px 10px 20px 10px',
+			margin: '0px 20px 20px 20px',
+			minHeight: 220,
 		},
 		[theme.breakpoints.down('xs')]: {
 			margin: '0px 0px 20px 0px',
-			minHeight: 250,
+			justifyContent: 'center',
+			minHeight: 200,
+			padding: '0px 5px',
 		}
 	},
 	programTitle: {
@@ -68,8 +87,12 @@ const useStyle = makeStyles(theme => ({
 		}
 	},
 	programDetails: {
-		fontSize: '1.2rem',
-		margin: 0,
+		fontSize: '1.1rem',
+		fontFamily: 'serif',
+		margin: "0px 5px",
+		[theme.breakpoints.down('sm')]: {
+			fontSize: '1rem'
+		}
 	},
 	programBtn: {
 		fontSize: '1.2rem',

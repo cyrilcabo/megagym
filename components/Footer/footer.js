@@ -9,7 +9,7 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyle = makeStyles(theme => ({
 	root: {
-		minHeight: 200,
+		minHeight: 180,
 		backgroundColor: '#ff5d5d',
 	},
 	container: {
