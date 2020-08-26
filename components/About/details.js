@@ -29,11 +29,12 @@ const useStyle = makeStyles(theme => ({
 			}
 		},
 		'& p': {
-			fontSize: '1.4rem',
+			fontSize: '1.2rem',
+			fontFamily: 'serif',
 			letterSpacing: '1px',
 			margin: '0px 0px 20px 0px',
 			[theme.breakpoints.down('md')]: {
-				fontSize: '1.2rem',
+				fontSize: '1.1rem',
 			},
 			[theme.breakpoints.down('xs')]: {
 				fontSize: '1rem'
