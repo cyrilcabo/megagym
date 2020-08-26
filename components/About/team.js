@@ -63,15 +63,16 @@ const useStyle = makeStyles(theme => ({
 		}
 	},
 	memberDetails: {
-		fontSize: '1.2rem',
+		fontSize: '1rem',
+		fontFamily: 'serif',
 		margin: 0,
 		lineHeight: '25px',
 		[theme.breakpoints.down('md')]: {
-			fontSize: '1.1rem',
+			fontSize: '0.95rem',
 			lineHeight: '30px'
 		},
-		[theme.breakpoints.down('sm')]: {
-			fontSize: '1rem',
+		[theme.breakpoints.down('xs')]: {
+			fontSize: '0.9rem',
 		}
 	}
 }));
