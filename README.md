@@ -18,15 +18,15 @@ You can clone the repository to your local machine. Be sure that you have NodeJS
 MegaGYM is just a mock application, to show clients custom and sample web designs. Pages include:
 
 * Homepage
- * Featured Services
- * Customer Testimonies
+    * Featured Services
+    * Customer Testimonies
 
 * Services
- * List of services
- * Email subscription
+    * List of services
+    * Email subscription
 
 * Checkout Services
 
 * About Page
- * Mega Team
- * About MegaGYM
+    * Mega Team
+    * About MegaGYM
