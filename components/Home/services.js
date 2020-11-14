@@ -11,11 +11,11 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyle = makeStyles(theme => ({
 	root: {
-		minHeight: 690,
+		minHeight: 590,
 		backgroundColor: '#212121',
 		position: 'relative',
 		[theme.breakpoints.down('md')]: {
-			minHeight: 670,
+			minHeight: 570,
 		},
 		[theme.breakpoints.down('sm')]: {
 			paddingBottom: 40,
@@ -24,15 +24,15 @@ const useStyle = makeStyles(theme => ({
 	title: {
 		color: 'white',
 		fontSize: '3rem',
-		margin: '100px 0px',
+		margin: '80px 0px',
 		[theme.breakpoints.down('sm')]: {
 			fontSize: '2.5rem',
-			margin: '80px 0px 80px 0px',
+			margin: '60 0px',
 			textAlign: 'center',
 		},
 		[theme.breakpoints.down('xs')]: {
 			fontSize: '2rem',
-			margin: '70px 0px',
+			margin: '45px 0px',
 		}
 	},
 	servicesContainer: {

@@ -18,8 +18,10 @@ const useStyle = makeStyles(theme => ({
 		position: 'relative',
 		color: 'white',
 		textAlign: 'center',
+		marginBottom: 50,
 		[theme.breakpoints.down('sm')]: {
 			backgroundColor: 'black',
+			minHeight: 326,
 		}
 	},
 	background: {
